@@ -1,0 +1,5 @@
+C:\Users\Enterprise\Documents\SoftwareDevelopment\LINQLearning\LINQLearning\LINQLearning\obj\Debug\net8.0\LINQLearning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enterprise\Documents\SoftwareDevelopment\LINQLearning\LINQLearning\LINQLearning\obj\Debug\net8.0\LINQLearning.AssemblyInfoInputs.cache
+C:\Users\Enterprise\Documents\SoftwareDevelopment\LINQLearning\LINQLearning\LINQLearning\obj\Debug\net8.0\LINQLearning.AssemblyInfo.cs
+C:\Users\Enterprise\Documents\SoftwareDevelopment\LINQLearning\LINQLearning\LINQLearning\obj\Debug\net8.0\LINQLearning.csproj.CoreCompileInputs.cache
+C:\Users\Enterprise\Documents\SoftwareDevelopment\LINQLearning\LINQLearning\LINQLearning\obj\Debug\net8.0\LINQLearning.sourcelink.json
