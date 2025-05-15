@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LINQLearning")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33d440471fda8c5ba30843a03e855881a9236bd3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56823e99e2b62f5073caf68934f1c0a9a9ad25ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("LINQLearning")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LINQLearning")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
