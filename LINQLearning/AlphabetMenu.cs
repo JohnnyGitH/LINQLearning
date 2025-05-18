@@ -1,5 +1,8 @@
 namespace LINQLearning
 {
+    // Menu of Alphabet options
+    // Each option performs a specific LINQ function or two on
+    // the alphabet list.
     public static class AlphabetMenu
     {
         public static void Show()
@@ -18,19 +21,21 @@ namespace LINQLearning
 
                 switch (selection)
                 {
+                    // OrderBy method - Orders the alphabet in ascending order
                     case "1":
                         var ascending = Data.Alphabet.OrderBy(c => c);
                         Console.WriteLine("Alphabet in Ascending Order: ");
                         Console.WriteLine(String.Join(", ", ascending));
                         break;
+                    // OrderByDescending method - Orders the alphabet in descending order
                     case "2":
                         var descending = Data.Alphabet.OrderByDescending(c => c);
                         Console.WriteLine("Alphabet in Descending Order: ");
                         Console.WriteLine(String.Join(", ", descending));
                         break;
+                    // Printing out the collection
                     case "3":
-                        Console.WriteLine("Alphabet in Descending Order: ");
-                        Console.WriteLine(String.Join(", ", Data.Alphabet));
+                        Console.WriteLine("The alphabet is : " + String.Join(", ", Data.Alphabet));
                         break;
                     case "4":
                         return;
