@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearning\\LINQLearning\\LINQLearning\\LINQLearning.csproj": {}
+    "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearn\\LINQLearning\\LINQLearning\\LINQLearning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearning\\LINQLearning\\LINQLearning\\LINQLearning.csproj": {
+    "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearn\\LINQLearning\\LINQLearning\\LINQLearning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearning\\LINQLearning\\LINQLearning\\LINQLearning.csproj",
+        "projectUniqueName": "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearn\\LINQLearning\\LINQLearning\\LINQLearning.csproj",
         "projectName": "LINQLearning",
-        "projectPath": "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearning\\LINQLearning\\LINQLearning\\LINQLearning.csproj",
+        "projectPath": "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearn\\LINQLearning\\LINQLearning\\LINQLearning.csproj",
         "packagesPath": "C:\\Users\\Enterprise\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearning\\LINQLearning\\LINQLearning\\obj\\",
+        "outputPath": "C:\\Users\\Enterprise\\Documents\\SoftwareDevelopment\\LINQLearn\\LINQLearning\\LINQLearning\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

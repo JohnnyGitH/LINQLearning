@@ -39,7 +39,6 @@ namespace LINQLearning
                     // Sum method - Adds up all the numbers in the list for a total
                     case "3":
                         var sum = Data.Numbers.Sum();
-                        Console.WriteLine("Sum of the numbers");
                         Console.WriteLine($"Sum of the numbers: {sum}");
                         break;
                     // Prints the numbers in the list

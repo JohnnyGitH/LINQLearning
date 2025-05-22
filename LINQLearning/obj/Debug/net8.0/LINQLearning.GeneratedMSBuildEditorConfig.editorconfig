@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LINQLearning
-build_property.ProjectDir = C:\Users\Enterprise\Documents\SoftwareDevelopment\LINQLearning\LINQLearning\LINQLearning\
+build_property.ProjectDir = C:\Users\Enterprise\Documents\SoftwareDevelopment\LINQLearn\LINQLearning\LINQLearning\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

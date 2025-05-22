@@ -35,17 +35,21 @@ namespace LINQLearning
                     case "1":
                         var ascending = Data.Products.OrderBy(c => c.Name);
                         Console.WriteLine("Products in Ascending Order by Name: ");
-                        Console.WriteLine(String.Join(", ", ascending));
+                        Console.WriteLine(String.Join(",\n ", ascending.Select(p => p.Name)));
                         break;
                     // OrderByDescending - Orders the products in descending order
                     case "2":
                         var descending = Data.Products.OrderByDescending(p => p.Name);
                         Console.WriteLine("Products in Descending Order by Name: ");
-                        Console.WriteLine(String.Join(", ", descending));
+                        Console.WriteLine(String.Join(", ", descending.Select(p => p.Name)));
                         break;
                     // Print em all out
                     case "3":
                         Console.WriteLine("Print out all the products in the collection:  " + String.Join(", ", Data.Products));
+                        foreach (var prod in Data.Products)
+                        {
+                            Console.WriteLine($"{prod.ProductId} , {prod.Name} , {prod.Category} , {prod.Price} \n");
+                        }
                         break;
                     // Take method
                     case "4":
@@ -54,12 +58,12 @@ namespace LINQLearning
                         Console.WriteLine($"The list contains: {Data.Products.Count} number of products");
                         foreach (var prod in Data.Products)
                         {
-                            Console.WriteLine(prod + "\n");
+                            Console.WriteLine(prod.Name + "\n");
                         }
-                        Console.WriteLine($"After the Take(3), we have : {takeMethod.Count()}");
+                        Console.WriteLine($"After the Take(3), we have the first {takeMethod.Count()} items in the list \n");
                         foreach (var prod2 in takeMethod)
                         {
-                            Console.WriteLine(prod2 + "\n");
+                            Console.WriteLine(prod2.Name + "\n");
                         }
                         break;
                     // Distinct method
@@ -67,27 +71,34 @@ namespace LINQLearning
                         var distinctCategory = Data.Products.Select(p => p.Category).Distinct().OrderBy(m => m);
                         Console.WriteLine("Distinct Product Categories: ");
                         Console.WriteLine(String.Join(", ", distinctCategory));
-                        return;
+                        break;
                     // Skip method - List all Products, skip one, list again
                     case "6":
                         var skipMethod = Data.Products.Skip(6); // Skip 6 products
                         Console.WriteLine("Full List: \n");
                         foreach (var prod in Data.Products)
                         {
-                            Console.WriteLine(prod + "\n");
+                            Console.WriteLine(prod.Name + "\n");
                         }
                         Console.WriteLine("Skipped List: \n");
                         foreach (var prod2 in skipMethod)
                         {
-                            Console.WriteLine(prod2 + "\n");
+                            Console.WriteLine(prod2.Name + "\n");
                         }
                         break;
-                    // Chunk method - Into 5's and iterate - Descending order
+                    // Chunk method - Into 5's and iterate
                     case "7":
-                        var chunks = Data.Products.Chunk(5).OrderByDescending(c => c);
+                        var chunks = Data.Products.Chunk(5);
+                        int chunkNum = 1;
                         foreach (var chunk in chunks)
                         {
-                            Console.WriteLine($"{chunk} \n");
+                            Console.WriteLine($"Chunk {chunkNum} \n");
+                            foreach (var prod in chunk)
+                            {
+                                Console.WriteLine($" - {prod.Name}");
+                            }
+                            Console.WriteLine();
+                            chunkNum++;
                         }
                         break;
                     // All method (returns a boolean)
@@ -106,8 +117,8 @@ namespace LINQLearning
                         ProductIdComparer pc = new();
                         var containMethodTrue = Data.Products.Contains(new Product { ProductId = 2, Name = "Bitcoin Miner", Category = "Electronics" }, pc);
                         var containMethodFalse = Data.Products.Contains(new Product { ProductId = 10, Name = "Fidget Spinner", Category = "Stationary" }, pc);
-                        Console.WriteLine($"Is there a product with Id 2 ? {containMethodTrue}");
-                        Console.WriteLine($"Is there a product with Id 10 ? {containMethodFalse}");
+                        Console.WriteLine($"Is there a product that contains the Id 2 ? {containMethodTrue}");
+                        Console.WriteLine($"Is there a product that contains the Id 10 ? {containMethodFalse}");
                         break;
                     // SequenceEqual method
                     case "11":
