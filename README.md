@@ -23,3 +23,4 @@ I am using the Alphabet , a Number list and a list of Products with Name / Categ
 ## To Run
 
 Make sure you have .NET installed, open a terminal, navigate to the .sln file and type **dotnet run** - Test
+Make sure you have .NET installed, open a terminal, navigate to the .sln file and type **dotnet run**
